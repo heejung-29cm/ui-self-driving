@@ -15,6 +15,7 @@ Figma 디자인 시안과 브라우저 DOM을 비교하고, 차이를 자동 수
 ```
 
 이 커맨드 하나로 아래가 자동 실행됩니다:
+
 1. Figma MCP로 디자인 상태 수집
 2. Playwright로 DOM 상태 수집
 3. Rule-based diff 생성
@@ -50,12 +51,12 @@ Figma 디자인 시안과 브라우저 DOM을 비교하고, 차이를 자동 수
 
 ## 문서 구조
 
-| 파일 | 내용 |
-|------|------|
-| `.claude/CLAUDE.md` | Claude 운영 규칙 |
+| 파일                         | 내용                  |
+| ---------------------------- | --------------------- |
+| `.claude/CLAUDE.md`          | Claude 운영 규칙      |
 | `.claude/commands/design.md` | `/design` 커맨드 정의 |
-| `.claude/agents/observer.md` | 관측 에이전트 |
-| `.claude/agents/executor.md` | 수정 에이전트 |
+| `.claude/agents/observer.md` | 관측 에이전트         |
+| `.claude/agents/executor.md` | 수정 에이전트         |
 
 ## 스크립트
 
@@ -111,4 +112,3 @@ Playwright 브라우저가 필요하면:
 ```bash
 npx playwright install chromium
 ```
-# ui-self-driving
