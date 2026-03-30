@@ -1,0 +1,22 @@
+{
+  "name": "ui-self-driving",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Self-driving UI workflow: Figma design → DOM comparison → auto-fix",
+  "scripts": {
+    "bootstrap:run": "node scripts/bootstrap-workflow.js",
+    "collect:figma": "node scripts/collect-figma.js",
+    "collect:dom": "node scripts/collect-dom.js",
+    "observe:run": "node scripts/run-observe.js",
+    "normalize:figma": "node scripts/normalize-figma.js",
+    "normalize:dom": "node scripts/normalize-dom.js",
+    "diff:generate": "node scripts/generate-diff.js",
+    "diff:split": "node scripts/split-diff.js",
+    "mcp:list": "claude mcp list",
+    "mcp:doctor": "claude doctor",
+    "agentation:doctor": "npx -y agentation-mcp doctor"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp",
+        "--headless",
+        "--isolated",
+        "--output-dir",
+        "artifacts/playwright",
+        "--test-id-attribute",
+        "data-testid"
+      ],
+      "env": {}
+    },
+    "agentation": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "agentation-mcp",
+        "server"
+      ],
+      "env": {}
+    }
+  }
+}
